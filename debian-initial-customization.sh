@@ -36,7 +36,6 @@ function initialise ()
     # Display a warning.
 	clear
 
-	# Give some instruction.
 	# Show a warning.
 	cat <<-END
 
