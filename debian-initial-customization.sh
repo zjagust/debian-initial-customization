@@ -39,24 +39,21 @@ function initialise ()
 	# Show a warning.
 	cat <<-END
 
+	${SPACER}
 
-		${SPACER}
+	${B}WARNING${R}
 
+	This script is only to be run on Debian 10 minimal installations, as described on the following link:
+    https://zacks.eu/debian-buster-minimal-installation/
 
-		${B}WARNING${R}
+    The script has a specific purpose and runs a certain tasks involving operating system environment
+    customization and software installation. Running this script anywhere at any time will leave you
+    with potentially un-bootable OS and software you may not want.
 
-		This script is only to be run on Debian 10 minimal installations, as described on the following link:
-        https://zacks.eu/debian-buster-minimal-installation/
+    A detailed overview of tasks this script will perform can be seen on the following link:
+    https://zacks.eu/debian-10-buster-initial-customization/
 
-        The script has a specific purpose and runs a certain tasks involving operating system environment
-        customization and software installation. Running this script anywhere at any time will leave you
-        with potentially un-bootable OS and software you may not want.
-
-        A detailed overview of tasks this script will perform can be seen on the following link:
-        https://zacks.eu/debian-10-buster-initial-customization/
-
-        Please make sure you understand what is written above!
-
+    Please make sure you understand what is written above!
 
 	END
 
