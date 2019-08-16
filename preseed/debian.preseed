@@ -1,0 +1,22 @@
+man-db	man-db/install-setuid	boolean true
+man-db	man-db/auto-update		boolean true
+irqbalance		irqbalance/oneshot		boolean false
+irqbalance		irqbalance/enable		boolean true
+gpm		gpm/repeat_type string  none
+gpm		gpm/device		string	/dev/input/mice
+gpm		gpm/append		string	
+gpm		gpm/type		string	exps2
+gpm		gpm/sample_rate	string
+gpm		gpm/responsiveness		string
+gpm		gpm/restart		boolean	false
+localepurge		localepurge/mandelete	boolean true
+localepurge		localepurge/none_selected		boolean false
+localepurge		localepurge/quickndirtycalc		boolean true
+localepurge		localepurge/use-dpkg-feature	boolean true
+localepurge		localepurge/showfreedspace		boolean true
+localepurge		localepurge/verbose		boolean true
+localepurge		localepurge/dontbothernew		boolean false
+localepurge		localepurge/remove_no	note
+localepurge		localepurge/nopurge		multiselect		en,	en_US.UTF-8
+sysstat	sysstat/enable	boolean false
+sysstat	sysstat/remove_files	boolean true
