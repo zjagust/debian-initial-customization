@@ -212,7 +212,7 @@ function additionalLocales ()
 	echo "${R}"
 
 	# Set locales
-	update-locale LC-ALL=en_US.UTF-8
+	update-locale LC_ALL=en_US.UTF-8
 	update-locale LC_MESSAGES=POSIX
 	update-locale LC_LANGUAGE=en_US.UTF-8
 	# Export locales
