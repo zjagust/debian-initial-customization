@@ -351,7 +351,7 @@ function develSoftware ()
 		${SPACER}
 
 		    With standard software installed, script will now install a batch of software required to
-			build various other software from source.
+		    build various other software from source.
 
 		${SPACER}
 
