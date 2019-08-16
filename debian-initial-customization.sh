@@ -434,10 +434,12 @@ function bashrcCleanup ()
 
 	# Set custom bashrc env file
 	cd "$(dirname "$0")"
-	cp environment/.bashrc .
+	cp environment/.bashrc /root/.
 	# APT cleanup
 	aptitude clean
 	aptitude autoclean
+	# Return debconf to max details
+	echo -e "debconf debconf/frontend select Dialog\ndebconf debconf/priority select low" | debconf-set-selections
 	# Reboot the system
 	reboot
 
