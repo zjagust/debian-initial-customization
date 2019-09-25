@@ -97,7 +97,7 @@ function preseedInitialize ()
 	echo "${R}"
 
 	# Initialize debian.preseed
-	cd "$(dirname "$0")"
+	cd "$(dirname -- "$0")"
 	debconf-set-selections preseed/debian.preseed
 
 } # preseedInitialize end
@@ -433,7 +433,7 @@ function bashrcCleanup ()
 	echo "${R}"
 
 	# Set custom bashrc env file
-	cd "$(dirname "$0")"
+	cd "$(dirname  -- "$0")"
 	cp environment/.bashrc /root/.
 	# APT cleanup
 	aptitude clean
