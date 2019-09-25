@@ -433,7 +433,7 @@ function bashrcCleanup ()
 	echo "${R}"
 
 	# Set custom bashrc env file
-	cd "$(dirname  -- "$0")"
+	cd "$(dirname -- "$0")"
 	cp environment/.bashrc /root/.
 	# APT cleanup
 	aptitude clean
