@@ -185,7 +185,7 @@ function interfacesName ()
 	echo "${R}"
 
 	# Set interface name
-	sed -i 's/^allow_hotplug .*/allow_hotplug eth0/' /etc/network/interfaces
+	sed -i 's/^allow-hotplug .*/allow-hotplug eth0/' /etc/network/interfaces
 	# Set interface name on protocol line
 	sed -i 's/^iface .* inet dhcp/iface eth0 inet dhcp/' /etc/network/interfaces
 
