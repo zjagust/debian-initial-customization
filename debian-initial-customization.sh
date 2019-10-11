@@ -126,7 +126,8 @@ function setSources ()
 	# Set sources.list
 	echo -n > /etc/apt/sources.list
 	echo -e "deb http://deb.debian.org/debian buster main contrib non-free
-	deb http://deb.debian.org/debian-security stable/updates main contrib non-free" > /etc/apt/sources.list
+	deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+	deb http://deb.debian.org/debian buster-updates main contrib non-free" > /etc/apt/sources.list
 	# Update repositories
 	apt-get update
 
