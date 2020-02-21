@@ -338,7 +338,7 @@ function standardSoftware ()
 	aptitude install -R -y busybox_ bash-completion bind9-host busybox-static dnsutils dosfstools \
 	friendly-recovery ftp fuse geoip-database groff-base hdparm info install-info iputils-tracepath irqbalance \
 	lshw lsof ltrace man-db manpages mlocate mtr-tiny parted powermgmt-base psmisc rsync sgml-base strace \
-	tcpdump telnet time uuid-runtime xml-core iptables
+	tcpdump telnet time uuid-runtime xml-core iptables resolvconf
 
 } # standardSoftware end
 
